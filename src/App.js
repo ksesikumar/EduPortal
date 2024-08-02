@@ -5,6 +5,8 @@ import Dashboard from './components/Dashboard';
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import Home from './components/Home';
+import AssignmentSubmissionForm from './components/AssignmentSubmissionForm';
+import AssignmentList from './components/AssignmentList';
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/home" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          
+          <Route path="/submit-assignment" element={<AssignmentSubmissionForm/>} />
+          <Route path="/my-assignments" element={<AssignmentList />} />
         </Routes>
       </Router>
     </div>
